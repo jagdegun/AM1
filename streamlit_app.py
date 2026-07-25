@@ -33,7 +33,7 @@ X_test_scaled = scaler.transform(X_test)
 
 # Train model
 model = LogisticRegression(
-    multi_class='multinomial', max_iter=1000, solver='lbfgs', class_weight='balanced'
+    max_iter=1000, solver='lbfgs', class_weight='balanced'
 )
 model.fit(X_train_scaled, y_train)
 y_pred = model.predict(X_test_scaled)
