@@ -1,6 +1,6 @@
 Level 6 AM1 Project 
 
-# 📦 Streamlit App Starter Kit 
+# AM1 Project Dashboard
 ```
 ⬆️ (Replace above with your app's name)
 ```
