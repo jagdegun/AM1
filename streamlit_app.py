@@ -11,7 +11,7 @@ st.title("AM1 Project Dashboard")
 df_raw = pd.read_csv("data/Level 6 AM1 Dataset.csv")
 
 st.write("### Dataset preview")
-st.dataframe(df_raw.head())
+st.dataframe(df_raw.drop(columns=['Postcode']).head())
 
 # Cleaned data (used for training - drops incomplete rows)
 features = ['Location', 'Gender', 'Age']
